@@ -195,12 +195,13 @@ class Ui_CellMH(object):
 		get_db_sel.exec_()
 		get_db_sel.show()
 		get_db_sel.close()
-		self.db_id=self.chosen_DB.db_id
-		self.begin_snap=self.chosen_DB.begin_snap
-		self.end_snap=self.chosen_DB.end_snap
-		self.instance_number=self.chosen_DB.instance_number
-		self.begin_interval=self.chosen_DB.begin_interval
-		self.end_interval=self.chosen_DB.end_interval
+		if self.chosen_DB.db_id!=None:
+			self.db_id=self.chosen_DB.db_id
+			self.begin_snap=self.chosen_DB.begin_snap
+			self.end_snap=self.chosen_DB.end_snap
+			self.instance_number=self.chosen_DB.instance_number
+			self.begin_interval=self.chosen_DB.begin_interval
+			self.end_interval=self.chosen_DB.end_interval
 
 	def get_prefs(self):
 		qt_connect = QtWidgets.QDialog()

@@ -30,7 +30,7 @@ class Ui_ChooseDB(object):
 		self.db_name=[]
 		self.dbs_list=[]
 		self.db_name==""
-		self.db_id=''
+		self.db_id=None
 		self.instance_number=''
 		self.begin_snap=''
 		self.end_snap=''		
